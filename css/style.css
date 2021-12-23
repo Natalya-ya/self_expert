@@ -1,0 +1,449 @@
+/* ----------------HEADER------------------ */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 9.6rem;
+  padding: 0 4.8rem;
+  position: relative;
+}
+.logo {
+  height: 2.2rem;
+}
+/* ----------------NAVIGATION------------------ */
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #343a40;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #24af86;
+}
+.main-nav-link.nav-cta-full:link,
+.main-nav-link.nav-cta-full:visited {
+  background-color: #0ca678;
+  color: #fff;
+  padding: 1.2rem 2.4rem;
+  border-radius: 10px;
+}
+.main-nav-link.nav-cta-full:hover,
+.main-nav-link.nav-cta-full:active {
+  background-color: #24af86;
+}
+.main-nav-link.nav-cta-outline:link,
+.main-nav-link.nav-cta-outline:visited {
+  background-color: #fff;
+  color: #0ca678;
+  box-shadow: inset 0 0 0 3px #e6fcf5;
+  padding: 1.2rem 2.4rem;
+  border-radius: 10px;
+}
+.main-nav-link.nav-cta-outline:hover,
+.main-nav-link.nav-cta-outline:active {
+  background-color: #e6fcf5;
+}
+/* ----------------MOBILE------------------ */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #344037;
+}
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+/* ----------------HERO SECTION------------------ */
+.hero-section {
+  padding: 4.8rem 0;
+}
+.hero {
+  max-width: 130rem;
+  display: grid;
+  grid-template-columns: 60fr 40fr;
+  gap: 9.6rem;
+  align-items: center;
+  margin: 0 auto;
+}
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+}
+.hero-img {
+  width: 100%;
+}
+/* ---------------- PARTNERS SECTION------------------ */
+
+.partners-section {
+  padding-top: 4.8rem;
+}
+.h2-partners {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.75px;
+  color: #86d3bc;
+  text-align: center;
+  margin-bottom: 2.4rem;
+}
+.logos {
+  display: flex;
+  justify-content: space-around;
+}
+.logos img {
+  height: 14rem;
+  filter: opacity(50%);
+}
+
+/* ---------------SECTION CALL TO SUBSCRIBE---------------- */
+.section-call-to-subscribe {
+  text-align: center;
+  margin-bottom: 12.8rem;
+}
+.call-to-subscribe-p {
+  font-size: 4.4rem;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.2;
+  letter-spacing: -0.1rem;
+}
+.colored-text {
+  color: #0ca678;
+}
+
+/*---------------- SECTION STRUCTURE OF THE COURSE ---------------*/
+/* .course-structure {
+  padding-top: 9.6rem;
+} */
+.order-number {
+  font-size: 8.6rem;
+  font-weight: 600;
+  color: #c3fae8;
+  margin-bottom: 1.2rem;
+}
+/*----------------- TESTIMONIAL SECTION --------------------------*/
+.testimonial-div {
+  background-color: #e6fcf5;
+  padding: 3.2rem 6.4rem 0;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.testimonial-image {
+  height: 20rem;
+  width: 20rem;
+  padding: 3.2rem;
+  border-radius: 50%;
+}
+
+.testimonial-autor {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.name-of-autor {
+  color: #343a40;
+  line-height: 1.5;
+}
+.testimonial-div .btn {
+  height: 6.4rem;
+  width: 6.4rem;
+  position: absolute;
+  background-color: #0ca678;
+  border: none;
+  border-radius: 50%;
+  color: #c3fae8;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+  padding: 1.4rem;
+  cursor: pointer;
+}
+.testimonial-div .btn:hover {
+  background-color: #24af86;
+}
+.btn-icon {
+  height: 3.2rem;
+  width: 3.2rem;
+}
+.btn--right {
+  right: 0;
+  top: 35%;
+  transform: translate(50%, -50%);
+}
+.btn--left {
+  left: 0;
+  top: 35%;
+  transform: translate(-50%, -50%);
+}
+/*--------------- PRICING SECTION--------------- */
+
+.pricing-plan-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4.8rem;
+  justify-items: center;
+  align-items: flex-start;
+}
+
+.pricing-plan {
+  border-radius: 11px;
+  border: 2px solid #c3fae8;
+  padding: 4.8rem;
+  line-height: 1.3;
+}
+.plan-green {
+  background-color: #e6fcf5;
+  border: 2px solid transparent;
+}
+.plan-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.plan-name {
+  color: #0ca678;
+  font-weight: 600;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75;
+  margin-bottom: 2.4rem;
+}
+.plan-price {
+  font-size: 3.2rem;
+  font-weight: 600;
+  color: #5d665f;
+  margin-bottom: 0.8rem;
+}
+.plan-price span {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-right: 0.8rem;
+}
+.plan-descripcion p {
+  line-height: 1.5;
+  font-size: 1.8rem;
+  margin-bottom: 5.8rem;
+}
+.pricing-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  font-size: 1.8rem;
+}
+
+/*----------- CTA SECTION------------- */
+.section-cta {
+  padding: 4.8rem 0 12.8rem;
+}
+.cta,
+.cta-call {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  background-image: linear-gradient(to right bottom, #20c997, #0ca678);
+}
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  overflow: hidden;
+}
+.cta-call {
+  padding: 4.8rem;
+  color: #043224;
+}
+.cta-text-box {
+  color: #043224;
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+}
+.cta-text {
+  font-size: 2.4rem;
+  line-height: 1.2;
+  margin-bottom: 4.8rem;
+}
+.cta .heading-secondary,
+.cta-call .heading-secondary {
+  color: #043224;
+  margin-bottom: 3.2rem;
+}
+.cta-img-box {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(78, 235, 162, 0.35),
+      rgba(34, 230, 188, 0.35)
+    ),
+    url("../img/demo-lesson.jpg");
+  background-size: cover;
+  background-position: top;
+}
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: #e6fcf5;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.cta-form input::placeholder {
+  color: rgb(170, 170, 170);
+}
+.cta *:focus,
+.cta-call *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(233, 253, 245, 0.575);
+}
+/* --------------ACCORDION------------ */
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+.accordion-div {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+  align-items: center;
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+  padding: 3.2rem;
+}
+.accordion-div .btn {
+  margin-top: 0;
+}
+.btn--down {
+  position: unset;
+  border: none;
+  background-color: white;
+  color: #0ca678;
+}
+.number,
+.question {
+  font-size: 2.4rem;
+  font-weight: 500;
+  /* color: #0ca678; */
+  line-height: 1.2;
+}
+.number {
+  color: #adb5bd;
+}
+.open {
+  border-top: 4px solid #0ca678;
+}
+.open .number,
+.open .question {
+  color: #0ca678;
+}
+.open .answer {
+  display: block;
+}
+.answer p {
+  line-height: 1.5;
+  margin-bottom: 2.4rem;
+}
+.answer {
+  grid-column: 2;
+  display: none;
+}
+/*-------------- FOOTER-------------- */
+.footer {
+  padding: 12.8rem 0;
+  border-top: 1px solid #c3fae8;
+}
+.not-public {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+.grid-footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.2rem;
+  justify-content: space-between;
+}
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 3.2rem;
+}
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+.social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+.copyright {
+  line-height: 1.6;
+  color: #5d665f;
+  margin-top: auto;
+}
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 2.4rem;
+}
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #48534b;
+  transition: all 0.3s;
+}
+.footer-link:hover,
+.footer-link:active {
+  color: #767676;
+}
+.footer-link-p {
+  text-align: center;
+  margin-top: 4.8rem;
+}
