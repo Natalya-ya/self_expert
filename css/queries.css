@@ -308,6 +308,86 @@
     justify-self: center;
   }
 }
+/* BELOW 390PX (small phones) */
+@media (max-width: 24em) {
+  html {
+    font-size: 37%;
+  }
+  .btn,
+  .btn:link,
+  .btn:visited {
+    margin-top: 1.8rem;
+  }
+  .big-margin-top {
+    margin-top: 7.6rem;
+  }
+  .hero-section {
+    padding: 2.8rem 0;
+  }
+  .heading-primary {
+    font-size: 3.4rem;
+  }
+  .hero-img {
+    width: 90%;
+  }
+  .logos img {
+    height: 6rem;
+  }
+  .grid-2-cols,
+  .grid-2-cols-photo-first {
+    grid-template-columns: 40rem;
+  }
+  .text {
+    font-weight: 400;
+    font-size: 1.8rem;
+  }
+  .name-of-autor {
+    font-size: 1.6rem;
+  }
+  .pricing-plan-grid {
+    grid-template-columns: repeat(1, 35rem);
+  }
+  .pricing-plan {
+    padding: 3.8rem;
+  }
+  .pricing-list {
+    margin-bottom: 4rem;
+  }
+  .section-cta {
+    padding: 4.8rem 0 4.8rem;
+  }
+  .number,
+  .question {
+    font-size: 1.8rem;
+  }
+  .btn-icon {
+    height: 2.2rem;
+    width: 2.2rem;
+  }
+  .accordion-div {
+    column-gap: 1.6rem;
+    row-gap: 0.4rem;
+    padding: 1.2rem;
+  }
+  .accordion-div .btn,
+  .accordion-div .btn:link,
+  .accordion-div .btn:visited {
+    padding: 0.6rem 1.2rem;
+  }
+  .answer p {
+    font-size: 1.8rem;
+  }
+  .cta-call {
+    padding: 3.8rem;
+  }
+  .cta-call .cta-form {
+    grid-template-columns: 70%;
+  }
+  .cta-form input,
+  .cta-form select {
+    font-size: 1.6rem;
+  }
+}
 
 /* - FONT SIZE SYSTEM (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
