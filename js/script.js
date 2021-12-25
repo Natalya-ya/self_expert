@@ -9,3 +9,18 @@ const headerEl = document.querySelector(".header");
 btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
 });
+//ACCORDION BTN
+// let btnAccordionEl = document.querySelector(".btn--down");
+// let accordionDivEl = document.querySelector(".accordion-div");
+// btnAccordionEl.addEventListener("click", function () {
+//   accordionDivEl.classList.toggle("open");
+// });
+const icons = document.querySelectorAll(".btn--down");
+
+for (let icon of icons) {
+  const item = icon.parentElement;
+
+  icon.addEventListener("click", function () {
+    item.classList.toggle("open");
+  });
+}

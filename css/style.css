@@ -377,6 +377,9 @@
   grid-column: 2;
   display: none;
 }
+.minus-icon {
+  display: none;
+}
 /*-------------- FOOTER-------------- */
 .footer {
   padding: 12.8rem 0;
