@@ -157,6 +157,7 @@
   /* MOBILE NAVIGATION*/
   .btn-mobile-nav {
     display: block;
+    z-index: 9999;
   }
   .main-nav {
     background-color: rgba(230, 252, 245, 0.952);
@@ -243,7 +244,7 @@
     height: 9.4rem;
     padding: 0.2rem;
   }
-  
+
   .cta-text-box {
     padding: 2.8rem 4.4rem 4.4rem 4.4rem;
   }
@@ -280,7 +281,7 @@
   .section-call-to-subscribe {
     margin-bottom: 9.6rem;
   }
-    .testimonial-div {
+  .testimonial-div {
     padding: 3.2rem 3.4rem;
   }
   .cta {
@@ -296,7 +297,7 @@
   .cta-call .cta-form {
     padding: 0.8rem;
   }
-   .answer {
+  .answer {
     grid-column: 1/-1;
   }
 
