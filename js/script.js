@@ -47,3 +47,23 @@ allLinks.forEach(function (link) {
       headerEl.classList.toggle("nav-open");
   });
 });
+//Sticky navigation
+const sectionHeroEl = document.querySelector(".hero-section");
+const obs = new IntersectionObserver(
+  function (entries) {
+    const ent = entries[0];
+    if (ent.isIntersecting === false) {
+      document.querySelector("body").classList.add("sticky");
+    }
+    if (ent.isIntersecting === true) {
+      document.querySelector("body").classList.remove("sticky");
+    }
+  },
+  {
+    // In the viewport
+    root: null,
+    threshold: 0,
+    rootMargin: "-80px",
+  }
+);
+obs.observe(sectionHeroEl);
