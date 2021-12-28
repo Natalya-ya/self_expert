@@ -343,7 +343,8 @@
 .accordion-div .btn {
   margin-top: 0;
 }
-.btn--down {
+.btn--down,
+.btn--up {
   position: unset;
   border: none;
   background-color: white;
@@ -377,8 +378,14 @@
   grid-column: 2;
   display: none;
 }
-.minus-icon {
+.btn--up {
   display: none;
+}
+.open .btn--down {
+  display: none;
+}
+.open .btn--up {
+  display: block;
 }
 /*-------------- FOOTER-------------- */
 .footer {

@@ -24,3 +24,12 @@ for (let icon of icons) {
     item.classList.toggle("open");
   });
 }
+const iconsUp = document.querySelectorAll(".btn--up");
+
+for (let iconUp of iconsUp) {
+  const itemUp = iconUp.parentElement;
+
+  iconUp.addEventListener("click", function () {
+    itemUp.classList.toggle("open");
+  });
+}
